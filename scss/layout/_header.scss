@@ -1,0 +1,125 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #fff;
+
+  
+  &-inner {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    
+    @include overTab {
+      display: flex;
+      align-items: center;
+      height: 80px;
+    }
+  }
+  
+  &-logo {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 60px;
+    margin-left: 10px;
+    
+    @include overTab {
+      font-size: 36px;
+      margin-left: 0;
+    }
+    span {
+      color: #27528C;
+    }
+  }
+  
+  &-nav {
+    display: flex;
+    
+    @include overTab {
+      padding: 0;
+      margin-left: auto;
+      background-color: transparent;
+      
+    }
+  }
+  
+  &-list {
+    width: 100%;
+    @include overTab {
+      display: flex;
+      align-items: center;
+    }
+  }
+  
+  &-item {
+    &:first-child {
+      margin-top: 60px;
+      
+      @include overTab {
+        margin-top: 0;
+      }
+    }
+    & + & {
+      @include overTab {
+        margin-left: 46px;
+      }
+    }
+  }
+  
+  &-link {
+    display: block;
+    font-weight: bold;
+    height: 60px;
+    line-height: 60px;
+    letter-spacing: .1em;
+    color: #000;
+    font-size: 18px;
+    text-align: right;
+    padding: 0 15px;
+    text-align: center;
+    
+    @include overTab {
+      font-weight: bold;
+      display: block;
+      height: 70px;
+      line-height: 70px;
+      letter-spacing: .1em;
+      color: #333;
+      &:hover {
+        transition: color .4s;
+        
+        color: #3EA1D1;
+      }
+    }
+  }
+  
+  &-btn {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    
+    @include overTab {
+      margin-left: 40px;
+    }
+    a {
+      font-weight: bold;
+      color: cl(white);
+      background:#00528c url(/img/button_tri.svg) right bottom no-repeat;
+      width: 160px;
+      height: 50px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.drawer--right.drawer-open .drawer-hamburger {
+  right: 0px;
+}

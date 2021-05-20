@@ -1,0 +1,41 @@
+.top {
+  background-image: url(/img/nasa-1lfI7wkGWZ4-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 60px;
+  height: 600px;
+  
+  @include overTab {
+    height: 800px;
+    margin-top: 80px;
+  }
+  &-textarea {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    position: absolute;
+    width: 100%;
+  }
+  &-ttl {
+    color: cl(white);
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-size: 23px;
+    
+    @include overTab {
+      font-size: 5vw;
+    }
+  }
+  &-txt {
+    color: cl(white);
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    font-size: 18px;
+    
+    @include overTab {
+      font-size: 3vw;
+    }
+  }
+}

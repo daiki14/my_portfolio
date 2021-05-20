@@ -1,0 +1,83 @@
+.about {
+  margin-bottom: 80px;
+  &-cont {
+    padding: 40px;
+    
+    @include overTab {
+      padding-top: 60px;
+    }
+  }
+  &-item {
+    display: flex;
+    flex-flow: column-reverse;
+    @include overTab {
+      display: flex;
+      flex-flow: row-reverse;
+    }
+  }
+}
+
+.text {
+  width: 100%;
+
+  @include overTab {
+    margin-left: 80px;
+    width: 50%;
+  }
+  .title {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+
+    @include overTab {
+      font-size: 32px;
+    }
+  }
+  .sub {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+
+    @include overTab {
+      margin-top: 30px;
+    }
+
+    @include overTab {
+      font-size: 18px;
+    }
+    img {
+      width: 40px;
+      height: 40px;
+
+      @include overTab {
+        width: 50px;
+        height: 50px; 
+      }
+    }
+  }
+  .desc {
+    letter-spacing: 2px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+}
+
+.about-image {
+  margin: 0 auto;
+  @include overTab {
+    margin: 0;
+  }
+  img {
+    border-radius: 50%;
+    background-size: 200px 200px;
+    background-position: right bottom;
+    width: 260px;
+    height: 260px;
+    
+    @include overTab {
+      width:  350px;
+      height: 350px;
+    }
+  }
+}

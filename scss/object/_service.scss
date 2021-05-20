@@ -1,0 +1,94 @@
+.service {
+  background-color: #F2F2F2;
+  padding-bottom: 80px;
+  &-cont {
+    padding-top: 0;
+
+    @include overTab {
+      padding-top: 60px;
+    }
+  }
+  &-item {
+    line-height: 2;
+    margin-top: 0;
+    display: flex;
+    flex-flow: column-reverse;
+    margin-top: 60px;
+    @include overTab {
+      margin-top: 40px;
+      display: flex;
+      flex-flow: row-reverse;
+    }
+  }
+}
+
+.service-text {
+  margin-left: 0;
+  width: 100%;
+  text-align: center;
+
+  @include overTab {
+    width: 50%;
+    margin-left: 80px;
+  }
+  .service-sub {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+
+    @include overTab {
+      font-size: 26px;
+      margin-top: 30px;
+    }
+    img {
+      width: 50px;
+      height: 50px;    
+    }
+  }
+  .service-desc {
+    font-size: 16px;
+    margin-top: 0;
+    font-weight: bold;
+
+    @include overTab {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+  }
+  .service-span {
+    margin-left: 16px;
+  }
+}
+
+.service-image { 
+  margin-top: 40px;
+  align-content: flex-start;
+  align-items: flex-start;
+  background: rgba(0,0,0,0.0);
+  border-radius: 80px;
+  // box-shadow: 14px 14px 0px 0px #6ab2f0;
+  margin: 0 auto;
+  img {
+    width: 350px;
+    height: 100%;
+    border-radius: 80px;
+    background-size:200px 200px;
+    background-position: right bottom;
+
+    @include overTab {
+      width:  450px;
+      height: 300px;
+    }
+  }
+}
+
+.service-footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 12px;
+
+  @include overTab {
+    margin-top: 60px;
+    font-size: 16px;
+  }
+}

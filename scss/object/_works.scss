@@ -1,0 +1,16 @@
+.works {
+  margin-bottom: 120px;
+}
+
+.portfolio {
+  padding-top: 60px;
+  .portfolio-item {
+    // はみ出たものを隠す
+    // margin-left: 30px;
+    // margin-right: 30px;
+    @include overTab {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+}

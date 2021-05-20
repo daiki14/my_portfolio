@@ -1,0 +1,57 @@
+.concept {
+  .concept-wrap {
+    padding-top: 80px;
+    @include overTab {
+      padding-top: 100px;
+    }
+  }
+  .concept-list {
+    padding-right: 40px;
+    padding-left: 40px;
+    @include overTab {
+      display: flex;
+    }
+  }
+  .concept-item {
+    display: flex;
+    flex-flow: column-reverse;
+    @include overTab {
+      width: percentage(390 / 1200);
+    }
+    + .concept-item {
+      margin-top: 30px;
+      @include overTab {
+        margin-top: 0;
+        margin-left: 20px;
+      }
+    }
+    .concept-text {
+      padding-right: 20px;
+      padding-left: 20px;
+      padding-bottom: 50px;
+      font-weight: bold;
+    }
+    .concept-title {
+      margin-top: 20px;
+      font-size: 28px;
+      text-align: center;
+    }
+    .concept-desc {
+      padding-top: 20px;
+      font-size: 18px;
+
+      @include overTab {
+        padding-top: 40px;
+      }
+    }
+    .concept-image {
+      flex: 1;
+      width: 100px;
+      margin: 0 auto;
+
+      @include overTab {
+        width: 160px;
+      }
+    }
+  }
+}
